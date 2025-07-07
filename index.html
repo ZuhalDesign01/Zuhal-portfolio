@@ -42,7 +42,7 @@
         <div class="hero-content">
           <div class="hero-text">
             <h1>
-              ZUHAL BALKHI<br />
+              <span id="typing"></span> <br />
               <span>UX/UI <span class="gradient-text">Designer</span></span>
             </h1>
             <p>
@@ -50,9 +50,17 @@
               seamless user experiences across all platforms.
             </p>
             <div class="social-icons">
-              <a href="#"><i data-lucide="linkedin"></i></a>
-              <a href="#"><i data-lucide="mail"></i></a>
-              <a href="#"><i data-lucide="instagram"></i></a>
+              <a
+                href="https://www.linkedin.com/in/zainab-zohal-balkhi-0a99552b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                ><i data-lucide="linkedin"></i
+              ></a>
+              <a href="mailto:zainabzohalbalkhi@gmail.com">
+                <i data-lucide="mail"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/zuhal_design01?igsh=MW50YWx2bXlqMGN1Yg=="
+                ><i data-lucide="instagram"></i
+              ></a>
             </div>
           </div>
 
@@ -188,9 +196,17 @@
     <!-- FOOTER -->
     <footer class="footer centered-section">
       <div class="social-icons center-icons">
-        <a href="#"><i data-lucide="linkedin"></i></a>
-        <a href="#"><i data-lucide="mail"></i></a>
-        <a href="#"><i data-lucide="instagram"></i></a>
+        <a
+          href="https://www.linkedin.com/in/zainab-zohal-balkhi-0a99552b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          ><i data-lucide="linkedin"></i
+        ></a>
+        <a href="mailto:zainabzohalbalkhi@gmail.com">
+          <i data-lucide="mail"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/zuhal_design01?igsh=MW50YWx2bXlqMGN1Yg=="
+          ><i data-lucide="instagram"></i
+        ></a>
       </div>
       <p class="copyright">&copy; 2025 Zuhal Balkhi. All rights reserved.</p>
     </footer>
@@ -201,7 +217,6 @@
       document.addEventListener("DOMContentLoaded", () => {
         lucide.createIcons();
 
-        // منوی فعال شونده
         const hamburger = document.getElementById("hamburger");
         const navMenu = document.getElementById("main-nav");
 
@@ -209,7 +224,6 @@
           navMenu.classList.toggle("active");
         });
 
-        // لینک فعال در حین اسکرول
         const sections = document.querySelectorAll("section");
         const navLinks = document.querySelectorAll("nav.main-nav a");
 
@@ -232,6 +246,33 @@
 
         window.addEventListener("scroll", setActiveLink);
       });
+
+      const text = "Zuhal Balkhi";
+      const typingElement = document.getElementById("typing");
+
+      let index = 0;
+      let forward = true;
+
+      function type() {
+        if (forward) {
+          typingElement.textContent = text.slice(0, index + 1);
+          index++;
+          if (index === text.length) {
+            forward = false;
+            setTimeout(type, 1500);
+            return;
+          }
+        } else {
+          typingElement.textContent = text.slice(0, index - 1);
+          index--;
+          if (index === 0) {
+            forward = true;
+          }
+        }
+        setTimeout(type, forward ? 200 : 100);
+      }
+
+      type();
     </script>
   </body>
 </html>

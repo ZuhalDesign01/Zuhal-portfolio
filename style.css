@@ -24,6 +24,25 @@ h3 {
 }
 
 /* === CONTAINER === */
+#typing {
+  display: inline-block;
+  border-right: 2px solid #ff5ed2;
+  font-size: inherit;
+  line-height: 1;
+  vertical-align: middle;
+  animation: blinkCursor 1s steps(1) infinite;
+}
+
+@keyframes blinkCursor {
+  0%,
+  100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ff5ed2;
+  }
+}
+
 .centered-section {
   max-width: 1200px;
   margin-left: auto;
