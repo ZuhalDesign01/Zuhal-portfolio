@@ -1,0 +1,120 @@
+/* === Responsive Grid Layouts === */
+
+/* PROJECTS SECTION GRID */
+.projects-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* === Default layout for desktop === */
+.project-card-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* === Mobile layout under 768px === */
+@media (max-width: 768px) {
+  .project-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .project-card-content img:first-child {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .project-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 0.6rem;
+  }
+
+  .project-info h3 {
+    font-size: 1.3rem;
+    color: white;
+  }
+
+  .project-info p {
+    font-size: 0.95rem;
+    color: #ccc;
+  }
+
+  .project-links.styled-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .project-links.styled-links a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #5edfff;
+  }
+
+  .icon-circle {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, #426eff, #25d3ff);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+    flex-direction: column; /* اضافه کن حتما */
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+    z-index: 999;
+    text-align: left;
+  }
+
+  .main-nav.active {
+    display: flex;
+  }
+
+  .main-nav a {
+    display: block;
+    padding: 0.8rem 1rem;
+    color: white;
+    border-bottom: 1px solid #444;
+    text-decoration: none;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+  }
+}

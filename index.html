@@ -1,0 +1,237 @@
+`<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zuhal Balkhi | UX/UI Designer</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="glass-bigbox">
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo" width="100" />
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="main-nav" id="main-nav">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT ME</a>
+        <a href="#background">MY BACKGROUND</a>
+        <a href="#contact">CONTACT ME</a>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <div class="glass-bigbox" id="home">
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>
+              ZUHAL BALKHI<br />
+              <span>UX/UI <span class="gradient-text">Designer</span></span>
+            </h1>
+            <p>
+              Crafting intuitive and visually engaging designs that deliver
+              seamless user experiences across all platforms.
+            </p>
+            <div class="social-icons">
+              <a href="#"><i data-lucide="linkedin"></i></a>
+              <a href="#"><i data-lucide="mail"></i></a>
+              <a href="#"><i data-lucide="instagram"></i></a>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <img
+              class="bg-ellipse"
+              src="img/ellipse.png"
+              alt="Background Ellipse"
+            />
+            <img
+              class="profile-img"
+              src="img/profile.png"
+              alt="Your Portrait"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" class="about centered-section">
+      <h2>ABOUT ME</h2>
+      <p>
+        I'm an enthusiastic UI/UX designer with experience working on diverse
+        projects using Figma. I specialize in crafting clean, user-friendly
+        designs for websites and mobile applications. My passion lies in
+        creating intuitive, aesthetically pleasing, and functional interfaces
+        that enhance user experiences. I'm deeply committed to delivering
+        impactful, user-centered solutions and continuously exploring new ways
+        to improve digital interactions.
+      </p>
+    </section>
+
+    <!-- BACKGROUND -->
+    <section id="background" class="background centered-section">
+      <h2>MY BACKGROUND</h2>
+      <h3 class="sub-title">MY EDUCATION</h3>
+      <div class="education">
+        <div class="edu-item">
+          <img src="img/coursera.png" alt="Coursera" />
+          <p>Coursera<br />Google UX Design<br />2024</p>
+        </div>
+        <div class="edu-item">
+          <img src="img/cti.png" alt="Code to Inspire" />
+          <p>Code to Inspire<br />Graphic Design<br />2023</p>
+        </div>
+        <div class="edu-item">
+          <img src="img/uopeople.png" alt="University of the People" />
+          <p>
+            University of the People<br />Computer Science<br />2023–Present
+          </p>
+        </div>
+        <div class="edu-item">
+          <img src="img/herat uni.png" alt="University of Herat" />
+          <p>University of Herat<br />English Literature<br />2017–Present</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="contact" class="projects centered-section">
+      <h2>MY PROJECTS</h2>
+      <div class="projects-inner">
+        <div class="glass-box">
+          <div class="project-card-content">
+            <img src="img/Coffee.png" alt="Coffee Test Project" />
+            <div class="project-info">
+              <h3>Coffee Test</h3>
+              <p>
+                Designed and developed a modern user interface for a café menu
+                app, enabling users to easily explore, customize, and order
+                their favorite items.
+              </p>
+              <div class="project-links styled-links">
+                <a href="#">
+                  <div class="icon-circle"><i data-lucide="figma"></i></div>
+                  <span>Link in Figma</span>
+                </a>
+                <a href="#">
+                  <div class="icon-circle"><i data-lucide="book-open"></i></div>
+                  <span>Case Study</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-box">
+          <div class="project-card-content">
+            <img src="img/Education.jpg" alt="Study Sphere Project" />
+            <div class="project-info">
+              <h3>Study Sphere</h3>
+              <p>
+                Created a study management app focused on enhancing focus,
+                scheduling, and access to educational resources for students and
+                learners.
+              </p>
+              <div class="project-links styled-links">
+                <a href="#">
+                  <div class="icon-circle"><i data-lucide="figma"></i></div>
+                  <span>Link in Figma</span>
+                </a>
+                <a href="#">
+                  <div class="icon-circle"><i data-lucide="book-open"></i></div>
+                  <span>Case Study</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact centered-section">
+      <h2>CONTACT ME</h2>
+      <form>
+        <div class="form-group">
+          <input type="email" id="email" placeholder=" " required />
+          <label for="email">Your Email</label>
+        </div>
+        <div class="form-group">
+          <textarea id="message" placeholder=" " required></textarea>
+          <label for="message">Your Message</label>
+        </div>
+        <div class="form-buttons">
+          <button type="submit">Send</button>
+          <button type="reset">Cancel</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer centered-section">
+      <div class="social-icons center-icons">
+        <a href="#"><i data-lucide="linkedin"></i></a>
+        <a href="#"><i data-lucide="mail"></i></a>
+        <a href="#"><i data-lucide="instagram"></i></a>
+      </div>
+      <p class="copyright">&copy; 2025 Zuhal Balkhi. All rights reserved.</p>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        lucide.createIcons();
+
+        // منوی فعال شونده
+        const hamburger = document.getElementById("hamburger");
+        const navMenu = document.getElementById("main-nav");
+
+        hamburger.addEventListener("click", () => {
+          navMenu.classList.toggle("active");
+        });
+
+        // لینک فعال در حین اسکرول
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll("nav.main-nav a");
+
+        function setActiveLink() {
+          let current = "";
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop - 100;
+            if (pageYOffset >= sectionTop) {
+              current = section.getAttribute("id");
+            }
+          });
+
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === "#" + current) {
+              link.classList.add("active");
+            }
+          });
+        }
+
+        window.addEventListener("scroll", setActiveLink);
+      });
+    </script>
+  </body>
+</html>
