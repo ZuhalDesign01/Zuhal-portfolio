@@ -1,4 +1,4 @@
-`<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -95,27 +95,42 @@
     </section>
 
     <!-- BACKGROUND -->
+
     <section id="background" class="background centered-section">
       <h2>MY BACKGROUND</h2>
       <h3 class="sub-title">MY EDUCATION</h3>
       <div class="education">
         <div class="edu-item">
           <img src="img/coursera.png" alt="Coursera" />
-          <p>Coursera<br />Google UX Design<br />2024</p>
+          <p>
+            <span class="line1">Coursera</span><br />
+            <span class="line2">Google UX Design</span><br />
+            <span class="line3">2024</span>
+          </p>
         </div>
         <div class="edu-item">
           <img src="img/cti.png" alt="Code to Inspire" />
-          <p>Code to Inspire<br />Graphic Design<br />2023</p>
+          <p>
+            <span class="line1">Code to Inspire</span><br />
+            <span class="line2">Graphic Design</span><br />
+            <span class="line3">2023</span>
+          </p>
         </div>
         <div class="edu-item">
           <img src="img/uopeople.png" alt="University of the People" />
           <p>
-            University of the People<br />Computer Science<br />2023–Present
+            <span class="line1">University of the People</span><br />
+            <span class="line2">Computer Science</span><br />
+            <span class="line3">2023–Present</span>
           </p>
         </div>
         <div class="edu-item">
           <img src="img/herat uni.png" alt="University of Herat" />
-          <p>University of Herat<br />English Literature<br />2017–Present</p>
+          <p>
+            <span class="line1">University of Herat</span><br />
+            <span class="line2">English Literature</span><br />
+            <span class="line3">2017–Present</span>
+          </p>
         </div>
       </div>
     </section>
@@ -217,11 +232,11 @@
       document.addEventListener("DOMContentLoaded", () => {
         lucide.createIcons();
 
-        const hamburger = document.getElementById("hamburger");
-        const navMenu = document.getElementById("main-nav");
+        const hamburger = document.querySelector(".hamburger");
+        const nav = document.querySelector(".main-nav");
 
         hamburger.addEventListener("click", () => {
-          navMenu.classList.toggle("active");
+          nav.classList.toggle("active");
         });
 
         const sections = document.querySelectorAll("section");

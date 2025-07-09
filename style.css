@@ -10,7 +10,7 @@ body {
   background: #100425;
   color: #fff;
   font-family: "Lato", sans-serif;
-  line-height: 1.6;
+  line-height: 2;
 }
 
 html {
@@ -192,7 +192,7 @@ nav.main-nav a.active {
 }
 
 .hero-text h1 {
-  font-size: 2.8rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: white;
 }
@@ -229,6 +229,7 @@ nav.main-nav a.active {
   background: linear-gradient(135deg, #426eff, #25d3ff);
   box-shadow: none;
 }
+
 .social-icons a:hover {
   transform: scale(1.1);
   box-shadow: 0 0 8px #25d3ff, 0 0 12px #25d3ff;
@@ -628,8 +629,6 @@ svg.lucide {
   stroke: white !important;
 }
 
-/* ------------------ */
-
 @media (max-width: 768px) {
   .project-card-content {
     flex-direction: column;
@@ -705,7 +704,7 @@ svg.lucide {
   border: 2px solid;
   border-image: linear-gradient(to right, #ff5ed2, #5edfff) 1;
   border-radius: 8px;
-  color: transparent;
+  color: #fff;
   font-size: 1rem;
 }
 
@@ -746,4 +745,22 @@ footer .social-icons {
 footer .copyright {
   color: #aaa;
   font-size: 0.85rem;
+}
+
+.edu-item .line1 {
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+}
+
+.edu-item .line2 {
+  font-weight: normal;
+  font-size: 1rem;
+  color: white;
+}
+
+.edu-item .line3 {
+  font-weight: normal;
+  font-size: 0.85rem;
+  color: #8c8c8c;
 }
